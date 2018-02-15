@@ -1,26 +1,30 @@
 ﻿<!DOCTYPE html>
 <html dir="ltr" lang="en">
 	<head>
-		<title>SamanirA</title>
-		<meta name="description" content="SamanirA Framework is Awesome" />
+		<title>Bisan co Group</title>
+		<meta name="description" content="Bisan co Group" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="SamanirA" />
-		<meta name="theme-color" content="#0a9abd" />
+		<meta name="theme-color" content="#00a395" />
 		<meta property="og:locale" content="en_GB" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="SamanirA" />
-		<meta property="og:description" content="SamanirA Framework is Awesome" />
-		<meta property="og:url" content="http://www.samanrashidi.com" />
-		<meta property="og:site_name" content="SamanirA" />
-		<meta property="og:image" content="http://www.samanrashidi.com/images/logo.png" />
-		<link rel="alternate" href="http://www.samanrashidi.com/" hreflang="en-gb" />
+		<meta property="og:title" content="Bisan co Group" />
+		<meta property="og:description" content="Bisan co Group" />
+		<meta property="og:url" content="http://bisangroupco.com" />
+		<meta property="og:site_name" content="Bisan co Group" />
+		<meta property="og:image" content="http://bisangroupco.com/images/logo.png" />
+		<link rel="alternate" href="http://bisangroupco.com" hreflang="en-gb" />
 		<link rel="icon" type="image/png" href="favicon.png" /> 
 
 		<!-- CSS Files
     	================================================== -->
 		<link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/media.css" media="screen"/>
 
@@ -28,8 +32,12 @@
     	================================================== -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/core.plugins.js"></script>
+		<script src="js/slider.min.js"></script>
+		
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
+
+		
 
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
@@ -47,10 +55,211 @@
 					<span></span>
 				</div><!-- nav-toggle end -->
 				
+				
+				<div class="navigation">
+					<div class="frame small">	
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li class="logo"><a href="#"><img src="images/logo.jpg" alt=""/></a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- frame end -->		
+				</div><!-- navigation end -->
+				
 			</header><!-- header end -->
 
 			<div class="body">
+				<div class="banner">
+					<div class="ms-layers-template">
+	                    <div class="master-slider" id="masterslider">
 
+	                        <!-- Slide 1 -->
+	                        <div class="ms-slide slide-1" style="z-index: 10" data-delay="10">
+	                            <img src="images/assets/blank.gif" data-src="images/slider/slide2.jpg" alt="Slider Image 1"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-70"
+	                                data-effect="top(150)"
+	                                data-duration="3500"
+	                                data-delay="600"
+	                                data-ease="easeOutExpo"
+	                            ><h1 class="block-display center-aligned white-color">Lorem ipsum dolor sit amet <br/> consectetuer<strong class="cream-color"> adipiscing </strong> elit</h1></div>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="70"
+	                                data-effect="bottom(150)"
+	                                data-duration="3500"
+	                                data-delay="600"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn site-2 large" href="#">More</a></div>
+	                            
+	                        </div><!-- ms-slide end -->
+	                        <!-- Slide 2 -->
+	                        <div class="ms-slide slide-2" style="z-index: 11" data-delay="7">
+	                            <img src="images/assets/blank.gif" data-src="images/slider/slide1.jpg" alt="Slider Image 2"/>
+	                            <div class="ms-layer"
+	                            	data-origin="br"
+	                            	data-offset-y="100"
+	                            	data-offset-x="1500"
+	                                data-effect="left(250)"
+	                                data-duration="1500"
+	                                data-delay="0"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn site-2 large" href="#">More</a></div>
+	                             
+	                        </div><!-- ms-slide end -->
+	                        <!-- Slide 3 -->
+	                        <div class="ms-slide slide-3" style="z-index: 12" data-delay="7">
+	                            <img src="images/assets/blank.gif" data-src="images/slider/slide3.jpg" alt="Slider Image 3"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-100"
+	                                data-effect="fade"
+	                                data-duration="2000"
+	                                data-delay="0"
+	                                data-ease="easeOutExpo"
+	                            ><h1 class="block-display center-aligned white-color">Lorem ipsum dolor sit amet <strong class="site-color">Lorem</strong></h1></div>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="0"
+	                                data-effect="fade"
+	                                data-duration="2000"
+	                                data-delay="500"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn site large" href="#">More</a></div>
+	                        </div><!-- ms-slide end -->
+	                                             
+	                    </div><!-- master-slider end -->
+	                </div><!-- ms-layers-template end -->
+				</div><!-- banner -->
+				<div class="about-us section-wrapper has-5-7-column">
+					<div class="section">
+						<div class="about-image-box">
+							<p>&nbsp;</p>
+						</div><!-- about-image-box end -->
+					</div><!-- section end -->
+					<div class="section">
+						<div class="frame small about-us-content white-color">
+							<h6 class="center-aligned white-color">Know more</h6>
+							<h2 class="center-aligned white-color">About us</h2>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+						</div><!-- frame end -->
+					</div><!-- section end -->
+				</div><!-- about-us end -->
+				<div class="product-wrapper">
+					<div id="slideshow" class="slideshow">
+						<div class="slide">
+							<h2 class="slide__title slide__title--preview">Lorem ipsum dolor sit amet <span class="slide__price">ipsum</span></h2>
+							<div class="slide__item">
+								<div class="slide__inner">
+									<img class="slide__img slide__img--small" src="images/product/small/1.png" alt="Some image" />
+									<button class="action action--open" aria-label="View details"><i class="fa fa-search-plus"></i></button>
+								</div>
+							</div>
+							<div class="slide__content">
+								<div class="slide__content-scroller">
+									<img class="slide__img slide__img--large" src="images/product/1.png" alt="Some image" />
+									<div class="slide__details">
+										<h2 class="slide__title slide__title--main">Lorem ipsum dolor sit amet</h2>
+										<p class="slide__description">consectetur adipiscing elit</p>
+										<div>
+											<span class="slide__price slide__price--large">$39</span>
+											<button class="button button--buy">Add to cart</button>
+										</div>
+									</div><!-- /slide__details -->
+								</div><!-- slide__content-scroller -->
+							</div><!-- slide__content -->
+						</div>
+						<div class="slide">
+							<h2 class="slide__title slide__title--preview">Grapeseed Skin Oil <span class="slide__price">$19</span></h2>
+							<div class="slide__item">
+								<div class="slide__inner">
+									<img class="slide__img slide__img--small" src="images/product/small/2.png" alt="Some image" />
+									<button class="action action--open" aria-label="View details"><i class="fa fa-search-plus"></i></button>
+								</div>
+							</div>
+							<div class="slide__content">
+								<div class="slide__content-scroller">
+									<img class="slide__img slide__img--large" src="images/product/2.png" alt="Some image" />
+									<div class="slide__details">
+										<h2 class="slide__title slide__title--main">Grapeseed Skin Oil</h2>
+										<p class="slide__description">Moisture control for all skin types</p>
+										<div>
+											<span class="slide__price slide__price--large">$19</span>
+											<button class="button button--buy">Add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<h2 class="slide__title slide__title--preview">Jojoba Skin Oil <span class="slide__price">$35</span></h2>
+							<div class="slide__item">
+								<div class="slide__inner">
+									<img class="slide__img slide__img--small" src="images/product/small/3.png" alt="Some image" />
+									<button class="action action--open" aria-label="View details"><i class="fa fa-search-plus"></i></button>
+								</div>
+							</div>
+							<div class="slide__content">
+								<div class="slide__content-scroller">
+									<img class="slide__img slide__img--large" src="images/product/3.png" alt="Some image" />
+									<div class="slide__details">
+										<h2 class="slide__title slide__title--main">Jojoba Skin Oil</h2>
+										<p class="slide__description">Protection for sensitive skin</p>
+										<div>
+											<span class="slide__price slide__price--large">$35</span>
+											<button class="button button--buy">Add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="action action--close" aria-label="Close"><i class="fa fa-close"></i></button>
+					</div>
+				</div><!-- product-wrapper end -->
+				<div class="recipes-wrapper">
+					<div class="inner-recipes-box">
+						<div class="section-wrapper has-6-6-column">
+							<div class="section">
+								<div class="recipe-description">
+									<h3 class="has-small-bottom-padding has-bottom-border">Ingredients</h3>
+									<ul class="recipe-description-list-items">
+										<li recipe-data="+">2 tablespoons olive oil</li>
+										<li recipe-data="+">2 cloves garlic, chopped</li>
+										<li recipe-data="+">1/4 cup chopped green onion</li>
+										<li recipe-data="+">1 pound fresh shrimp, peeled and deveined</li>
+										<li recipe-data="+">1/2 cup Italian flat leaf parsley, chopped</li>
+										<li recipe-data="+">1/2 cup freshly grated Parmesan cheese</li>
+									</ul>
+								</div><!-- recipe-description end -->
+							</div><!-- section end -->
+							<div class="section">
+								<div class="recipe-description">
+									<h3 class="has-small-bottom-padding has-bottom-border">Directions</h3>
+									<ul class="prep-time">
+								        <li class="prep-time-item"><span class="clock-icon"></span></li>
+							            <li class="prep-time-item">
+							                <p>Prep</p><span class="prep-time-item-time">10</span> m
+							            </li>
+							            <li class="prep-time-item">
+							                <p>Cook</p><span class="prep-time-item-time">10</span> m
+							            </li>
+							            <li class="prep-time-item">
+							                <p>Ready In</p><span class="prep-time-item-time">20</span> m
+							            </li>
+								   	</ul><!-- prep-time end -->
+									<ul class="recipe-description-list-items">
+										<li recipe-data="1">Heat olive oil in a large skillet. Saute garlic and scallions briefly, but do not brown the garlic.</li>
+										<li recipe-data="2">Toss in shrimp and saute until pink and opaque in the center. Stir in parsley and heat through.</li>
+										<li recipe-data="3">Remove from heat and pour into a serving dish. Sprinkle with grated Parmesan cheese.</li>
+									</ul><!-- recipe-description-list-items end -->
+								</div><!-- recipe-description end -->
+							</div><!-- section end -->
+						</div><!-- section-wrapper end -->
+					</div><!-- inner-recipes-box end -->	
+				</div><!-- recipes-wrapper end -->
 			</div><!-- body end -->
 			
 			<footer class="footer">
@@ -58,6 +267,14 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
-
+<script src="js/classie.js"></script>
+<script src="js/dynamics.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	(function() {
+		document.documentElement.className = 'js';
+		var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+	})();
+</script>
 	</body>
 </html>
