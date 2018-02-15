@@ -53,7 +53,7 @@ body{
 
 body{
 	line-height: 1.5;
-	font-family: 'Roboto', 'Roboto-Medium', Arial, sans-serif;
+	font-family: 'Muli', 'Muli-Black', Arial, sans-serif;
 	font-size:16px;
 	color:#121212;
 	background-color:#fefefe;
@@ -93,7 +93,7 @@ h4,
 h5,
 h6{
 	line-height: 1.3;
-	font-family: 'Roboto-Medium';
+	font-family: 'Oswald';
 	font-weight: normal;
 	color:#121212;
 }
@@ -107,7 +107,11 @@ h6{font-size:17px;}
 
 p{padding-top:15px;}
 p a{color:#0a9abd;}
-p strong{color:#0a9abd;}
+
+p strong{
+	font-family: 'Muli-Black';
+	color:#0a9abd;
+}
 
 strong{font-weight: normal;}
 
@@ -130,25 +134,25 @@ iframe{
 /* -- _Main Styles -- */
 
 ::-webkit-input-placeholder{
-	font-family: 'Roboto';
+	font-family: 'Muli';
     font-size:16px;
     color: #9a9a9a;
 }
 
 :-moz-placeholder{
-    font-family: 'Roboto';
+    font-family: 'Muli';
     font-size:16px;
     color: #9a9a9a;
 }
 
 ::-moz-placeholder{
-    font-family: 'Roboto';
+    font-family: 'Muli';
     font-size:16px;
     color: #9a9a9a;
 }
 
 :-ms-input-placeholder{  
-    font-family: 'Roboto';
+    font-family: 'Muli';
     font-size:16px;
     color: #9a9a9a;
 }
@@ -172,7 +176,7 @@ legend{
 input,
 textarea,
 button{
-	font-family: 'Roboto';
+	font-family: 'Muli';
 	font-size: 16px;
  	color:#121212;
 	outline:none;
@@ -189,7 +193,7 @@ select{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	font-family: 'Roboto';
+	font-family: 'Muli';
 	font-size: 16px;
 	color:#121212;
 	text-align: center;
@@ -416,7 +420,7 @@ label.error{
 .radio-holder input[type="radio"] + label{
 	position: relative;
 	display: inline-block;
-	font-family: 'Roboto';
+	font-family: 'Muli';
 	font-size: 16px;
 	color: #686b6d;
 	padding:4px 0 4px 42px;
@@ -537,21 +541,21 @@ label.error{
 
 .bttn.site{
 	color:#ffffff;
-	background-color: #0a9abd;
+	background-color: #00afbb;
 }
 
 .bttn.site:hover{
-	color:#0a9abd;
+	color:#00afbb;
 	background-color: #ffffff;
 }
 
 .bttn.site-2{
-	color:#ffffff;
-	background-color: #f55757;
+	color:#000000;
+	background-color: #ffddb7;
 }
 
 .bttn.site-2:hover{
-	color:#f55757;
+	color:#f36d31;
 	background-color: #ffffff;
 }
 
@@ -660,6 +664,7 @@ a.close{
 	min-width: 320px;
 	width:100%;
 	min-height: 100%;
+	padding-top: 147px;
 }
 
 .frame{
@@ -808,15 +813,15 @@ a.close{
 .font-size-xsmall{font-size: 11px;}
 .font-size-xxsmall{font-size: 9px;}
 
-.font-type-default{font-family: 'Roboto';}
-.font-type-medium{font-family: 'Roboto-Medium';}
-.font-type-different{font-family: 'Iran';}
+.font-type-default{font-family: 'Muli';}
+.font-type-medium{font-family: 'Muli-Black';}
+.font-type-different{font-family: 'Oswald';}
 
-.site-color{color:#0a9abd !important;}
-.site-color-2{color:#f55757 !important;}
-.blue-color{color:#368098 !important;}
-.green-color{color:#61bd61 !important;}
-.purple-color{color:#843698 !important;}
+.site-color{color:#00afbb !important;}
+.site-color-2{color:#f36f2f !important;}
+.blue-color{color:#00938e !important;}
+.green-color{color:#81a862 !important;}
+.cream-color{color:#ffddb7 !important;}
 .red-color{color:#e56262 !important;}
 .yellow-color{color:#e4d257 !important;}
 .orange-color{color:#ef9200 !important;}
@@ -1284,14 +1289,14 @@ a.close{
 
 .double-quotes::before{
 	content:'"';
-	font-family: 'Roboto-Medium';
+	font-family: 'Muli-Black';
 	font-size: 18px;
 	color:#000000;
 }
 
 .double-quotes::after{
 	content:'"';
-	font-family: 'Roboto-Medium';
+	font-family: 'Muli-Black';
 	font-size: 18px;
 	color:#000000;
 }
@@ -1437,11 +1442,11 @@ a.close{
 	padding-top:15px !important;
 }
 
-.static-content p strong{font-family: 'Roboto-Medium' !important;}
+.static-content p strong{font-family: 'Muli-Black' !important;}
 .static-content p a{color:#0a9abd !important;}
 
 .static-content blockquote{
-	font-family: 'Roboto-Medium' !important;
+	font-family: 'Muli-Black' !important;
 	font-size: 18px !important;
 	color: #000000 !important;
 	margin-top: 15px !important;
@@ -1502,7 +1507,7 @@ a.close{
 .table td a:hover{color:#0a9abd;}
 
 .table th{
-	font-family: 'Roboto';
+	font-family: 'Muli';
 	color:#ffffff;
 	background-color: #0a9abd;
 }
@@ -1514,7 +1519,7 @@ a.close{
 /* -- _Table Filter -- */
 
 .table-filter{
-	font-family: 'Roboto-Medium';
+	font-family: 'Muli-Black';
 	padding-left: 15px;
 	cursor: pointer;
 	background: url('../images/assets/arrow-down-black.png') no-repeat left 6px;
