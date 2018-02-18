@@ -25,6 +25,8 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/media.css" media="screen"/>
 
@@ -33,7 +35,10 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/core.plugins.js"></script>
 		<script src="js/slider.min.js"></script>
-		
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
 
@@ -149,6 +154,8 @@
 					</div><!-- section end -->
 				</div><!-- about-us end -->
 				<div class="product-wrapper">
+					<h6 class="center-aligned">See our</h6>
+					<h2 class="center-aligned has-xlarge-bottom-margin">Products</h2>
 					<div id="slideshow" class="slideshow">
 						<div class="slide">
 							<h2 class="slide__title slide__title--preview">Lorem ipsum dolor sit amet <span class="slide__price">ipsum</span></h2>
@@ -220,46 +227,184 @@
 					</div>
 				</div><!-- product-wrapper end -->
 				<div class="recipes-wrapper">
-					<div class="inner-recipes-box">
-						<div class="section-wrapper has-6-6-column">
-							<div class="section">
-								<div class="recipe-description">
-									<h3 class="has-small-bottom-padding has-bottom-border">Ingredients</h3>
-									<ul class="recipe-description-list-items">
-										<li recipe-data="+">2 tablespoons olive oil</li>
-										<li recipe-data="+">2 cloves garlic, chopped</li>
-										<li recipe-data="+">1/4 cup chopped green onion</li>
-										<li recipe-data="+">1 pound fresh shrimp, peeled and deveined</li>
-										<li recipe-data="+">1/2 cup Italian flat leaf parsley, chopped</li>
-										<li recipe-data="+">1/2 cup freshly grated Parmesan cheese</li>
-									</ul>
-								</div><!-- recipe-description end -->
-							</div><!-- section end -->
-							<div class="section">
-								<div class="recipe-description">
-									<h3 class="has-small-bottom-padding has-bottom-border">Directions</h3>
-									<ul class="prep-time">
-								        <li class="prep-time-item"><span class="clock-icon"></span></li>
-							            <li class="prep-time-item">
-							                <p>Prep</p><span class="prep-time-item-time">10</span> m
-							            </li>
-							            <li class="prep-time-item">
-							                <p>Cook</p><span class="prep-time-item-time">10</span> m
-							            </li>
-							            <li class="prep-time-item">
-							                <p>Ready In</p><span class="prep-time-item-time">20</span> m
-							            </li>
-								   	</ul><!-- prep-time end -->
-									<ul class="recipe-description-list-items">
-										<li recipe-data="1">Heat olive oil in a large skillet. Saute garlic and scallions briefly, but do not brown the garlic.</li>
-										<li recipe-data="2">Toss in shrimp and saute until pink and opaque in the center. Stir in parsley and heat through.</li>
-										<li recipe-data="3">Remove from heat and pour into a serving dish. Sprinkle with grated Parmesan cheese.</li>
-									</ul><!-- recipe-description-list-items end -->
-								</div><!-- recipe-description end -->
-							</div><!-- section end -->
-						</div><!-- section-wrapper end -->
-					</div><!-- inner-recipes-box end -->	
+					<div class="ms-layers-template">
+	                    <div class="master-slider ms-skin-default" id="masterslider2">
+							<div class="ms-slide slide-1" style="z-index: 10" data-delay="15">
+	                            <img src="images/assets/blank.gif" data-src="images/recipes/recipe-bg1.jpg" alt="Slider Image 1"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-70"
+	                                data-effect="left(150)"
+	                                data-duration="1500"
+	                                data-delay="100"
+	                                data-ease="easeOutExpo"
+	                            >
+			                        <!-- Slide 1 -->
+			                        <div class="inner-recipes-box">
+										<div class="section-wrapper has-5-7-column has-bottom-margin">
+											<div class="section">
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe1.jpg"><img src="images/recipes/recipe1.jpg" alt=""/></a>
+
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe2.jpg"><img src="images/recipes/recipe2.jpg" alt=""/></a>
+
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe3.jpg"><img src="images/recipes/recipe3.jpg" alt=""/></a>
+
+											</div><!-- section end -->
+											<div class="section">
+												<h4>Simple Garlic Shrimp</h4>
+												<ul class="prep-time">
+											        <li class="prep-time-item"><span class="clock-icon"></span></li>
+										            <li class="prep-time-item">
+										                <p>Prep</p><span class="prep-time-item-time">10</span> m
+										            </li>
+										            <li class="prep-time-item">
+										                <p>Cook</p><span class="prep-time-item-time">10</span> m
+										            </li>
+										            <li class="prep-time-item">
+										                <p>Ready In</p><span class="prep-time-item-time">20</span> m
+										            </li>
+											   	</ul><!-- prep-time end -->
+											   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec</p>
+											</div><!-- section end -->
+										</div><!-- section-wrapper end -->
+										<div class="section-wrapper has-6-6-column">
+											<div class="section">
+												<div class="recipe-description">
+													<h5 class="has-small-bottom-padding has-bottom-border">Ingredients</h5>
+													<ul class="recipe-description-list-items">
+														<li recipe-data="+">2 tablespoons olive oil</li>
+														<li recipe-data="+">2 cloves garlic, chopped</li>
+														<li recipe-data="+">1/4 cup chopped green onion</li>
+														<li recipe-data="+">1 pound fresh shrimp, peeled and deveined</li>
+														<li recipe-data="+">1/2 cup Italian flat leaf parsley, chopped</li>
+														<li recipe-data="+">1/2 cup freshly grated Parmesan cheese</li>
+													</ul>
+												</div><!-- recipe-description end -->
+											</div><!-- section end -->
+											<div class="section">
+												<div class="recipe-description">
+													<h5 class="has-small-bottom-padding has-bottom-border">Directions</h5>
+													<ul class="recipe-description-list-items">
+														<li recipe-data="1">Heat olive oil in a large skillet. Saute garlic and scallions briefly, but do not brown the garlic.</li>
+														<li recipe-data="2">Toss in shrimp and saute until pink and opaque in the center. Stir in parsley and heat through.</li>
+														<li recipe-data="3">Remove from heat and pour into a serving dish. Sprinkle with grated Parmesan cheese.</li>
+													</ul><!-- recipe-description-list-items end -->
+												</div><!-- recipe-description end -->
+											</div><!-- section end -->
+										</div><!-- section-wrapper end -->
+									</div><!-- inner-recipes-box end -->	 
+								</div>	 
+	                   		</div><!-- ms-slide end -->
+	                   		<div class="ms-slide slide-2" style="z-index: 11" data-delay="15">
+	                            <img src="images/assets/blank.gif" data-src="images/recipes/recipe-bg2.jpg" alt="Slider Image 2"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-70"
+	                                data-effect="left(150)"
+	                                data-duration="1500"
+	                                data-delay="100"
+	                                data-ease="easeOutExpo"
+	                            >
+		                            <div class="inner-recipes-box">
+										<div class="section-wrapper has-5-7-column has-bottom-margin">
+											<div class="section">
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe2.jpg"><img src="images/recipes/recipe2.jpg" alt=""/></a>
+
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe1.jpg"><img src="images/recipes/recipe1.jpg" alt=""/></a>
+
+												<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/recipes/recipe3.jpg"><img src="images/recipes/recipe3.jpg" alt=""/></a>
+
+											</div><!-- section end -->
+											<div class="section">
+												<h4>Spicy Grilled Shrimp</h4>
+												<ul class="prep-time">
+											        <li class="prep-time-item"><span class="clock-icon"></span></li>
+										            <li class="prep-time-item">
+										                <p>Prep</p><span class="prep-time-item-time">15</span> m
+										            </li>
+										            <li class="prep-time-item">
+										                <p>Cook</p><span class="prep-time-item-time">6</span> m
+										            </li>
+										            <li class="prep-time-item">
+										                <p>Ready In</p><span class="prep-time-item-time">21</span> m
+										            </li>
+											   	</ul><!-- prep-time end -->
+											   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec</p>
+											</div><!-- section end -->
+										</div><!-- section-wrapper end -->
+										<div class="section-wrapper has-6-6-column">
+											<div class="section">
+												<div class="recipe-description">
+													<h5 class="has-small-bottom-padding has-bottom-border">Ingredients</h5>
+													<ul class="recipe-description-list-items">
+														<li recipe-data="+">1 large clove garlic</li>
+														<li recipe-data="+">1 tablespoon coarse salt</li>
+														<li recipe-data="+">1/2 teaspoon cayenne pepper</li>
+														<li recipe-data="+">1 teaspoon paprika</li>
+														<li recipe-data="+">2 tablespoons olive oil</li>
+														<li recipe-data="+">2 teaspoons lemon juice</li>
+														<li recipe-data="+">2 pounds large shrimp, peeled and deveined</li>
+														<li recipe-data="+">8 wedges lemon, for garnish</li>
+													</ul>
+												</div><!-- recipe-description end -->
+											</div><!-- section end -->
+											<div class="section">
+												<div class="recipe-description">
+													<h5 class="has-small-bottom-padding has-bottom-border">Directions</h5>
+													<ul class="recipe-description-list-items">
+														<li recipe-data="1">Preheat grill for medium heat.</li>
+														<li recipe-data="2">In a small bowl, crush the garlic with the salt. Mix in cayenne pepper and paprika, and then stir in olive oil and lemon juice to form a paste. In a large bowl, toss shrimp with garlic paste until evenly coated.</li>
+														<li recipe-data="3">Lightly oil grill grate. Cook shrimp for 2 to 3 minutes per side, or until opaque. Transfer to a serving dish, garnish with lemon wedges, and serve.</li>
+													</ul><!-- recipe-description-list-items end -->
+												</div><!-- recipe-description end -->
+											</div><!-- section end -->
+										</div><!-- section-wrapper end -->
+									</div><!-- inner-recipes-box end -->
+								</div><!-- ms-layer end -->	
+	                        </div><!-- ms-slide end -->
+						</div><!-- master-slider end -->
+					</div><!-- ms-layers-template end -->
 				</div><!-- recipes-wrapper end -->
+				<div class="contact-us-wrapper">
+					<div class="section-wrapper has-7-5-column">
+						<div class="section">
+							<div class="frame small has-xlarge-top-padding">
+								<h6 class="center-aligned">Ways to</h6>
+								<h2 class="center-aligned has-large-bottom-margin">Contact us</h2>
+								<form action="#" method="POST" accept-charset="utf-8" class="contact-form">
+									<div class="section-wrapper has-6-6-column different-column has-top-margin">
+										<div class="section">
+											<div class="field-holder">
+												<input type="text" name="full_name" id="full_name" placeholder="Full Name" />
+											</div><!-- field-holder end -->
+											<div class="field-holder">
+												<input type="tel" name="phone" id="phone" placeholder="Mobile Number" />
+											</div><!-- field-holder end -->
+										</div><!-- section end -->
+										<div class="section">
+											<div class="field-holder">
+												<input type="email" name="email" id="" placeholder="Email Address" />
+											</div><!-- field-holder end -->
+											<div class="field-holder">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div><!-- field-holder end -->
+										</div><!-- section end -->
+									</div><!-- section-wrapper end -->
+									<textarea placeholder="Your Message..."></textarea>
+									<div class="field-holder">
+										<input class="full-width" type="submit" value="Submit" />
+									</div><!-- field-holder end -->
+								</form>
+								<!--  -->
+							</div><!-- frame end -->
+						</div><!-- section end -->
+						<div class="section map-wrapper">
+							<div class="google-map">
+								<div id="map_canvas"></div><!-- map_canvas end -->
+							</div><!-- google-map end -->
+						</div><!-- section end -->
+					</div><!-- section-wrapper end -->
+				</div><!-- contact-us-wrapper end -->
 			</div><!-- body end -->
 			
 			<footer class="footer">
@@ -270,11 +415,72 @@
 <script src="js/classie.js"></script>
 <script src="js/dynamics.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjx-gcQgzoZJdu-M9K-lzI_RB4UJN8Xo&amp;v=3.exp&amp;sensor=false"></script>
 <script>
 	(function() {
 		document.documentElement.className = 'js';
 		var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 	})();
+</script>
+<script type="text/javascript">
+// Custom Google Map
+$(document).ready(function(){
+
+    var map;
+    var myMap = new google.maps.LatLng(30.2830289,57.0544481);
+
+    function initialize() {
+
+        var roadAtlasStyles = [
+    		{
+        "featureType": "administrative.country",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "hue": "#ff0000"
+            }
+		           ]
+		    }
+		]
+        var mapOptions = {
+            zoom: 17,
+            center: myMap,
+            scrollwheel: false,
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'usroadatlas']
+            }
+        };
+
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+
+        var mapCanvas = document.getElementById('map_canvas');
+        var myLatlng = new google.maps.LatLng(30.2830289,57.0555481);
+        var image = 'images/assets/marker.png';
+        var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        icon: image
+    });
+
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+        var styledMapOptions = {
+            
+        };
+
+        var usRoadMapType = new google.maps.StyledMapType(
+            roadAtlasStyles, styledMapOptions);
+
+        map.mapTypes.set('usroadatlas', usRoadMapType);
+        map.setMapTypeId('usroadatlas');
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize); 				
+
+});
 </script>
 	</body>
 </html>

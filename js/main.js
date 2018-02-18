@@ -510,4 +510,37 @@
 
 	window.CircleSlideshow = CircleSlideshow;
 
+	// Form Validate
+
+	$('.contact-form').validate({
+	  rules: {
+	    full_name: {
+	      required: true,
+	      minlength: 3
+	    },
+	    subject: {
+	      required: true,
+	      minlength: 3
+	    },
+	    email: {
+	      required: true,
+	      minlength: 5,
+	      email:true
+	    },
+	    phone: {
+	      required: true,
+	      minlength: 5,
+	      number:true
+	    }
+	  },
+	  errorPlacement: function(error, element) {
+	    return false;
+	    alert('error');
+	  },
+	  submitHandler: function (form) {
+	    $('.thank-you').addClass('active');        
+	  }
+
+	});
+
 })(window);
