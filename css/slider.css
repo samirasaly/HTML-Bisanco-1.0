@@ -156,8 +156,7 @@
 	width: 10px;
 	height: 10px;
 	margin: 4px;
-	background-color: #00afbb;
-	border:1px solid #ffffff;
+	background-color: #81a862;
 }
 
 .ms-sbar{position: absolute;}
@@ -337,3 +336,4 @@
 .ms-partialview-template img{border-radius: 4px;}
 
 .ms-inner-controls-cont{margin:auto;}
+
