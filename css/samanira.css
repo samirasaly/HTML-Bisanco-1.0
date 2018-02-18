@@ -250,6 +250,8 @@ input[type="submit"]{
 	transition:all .2s ease-in-out;
 }
 
+input[type="submit"].full-width{width: 100%;}
+
 input[type="search"]{
 	padding-right: 32px;
 	background: url('../images/icons/search.png') no-repeat 95% center #ffffff;
@@ -1476,7 +1478,7 @@ a.close{
 #map_canvas{
 	position: relative;
 	width:100%;
-	height:300px;
+	height:520px;
 }
 
 #map_canvas img{

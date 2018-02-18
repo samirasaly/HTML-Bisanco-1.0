@@ -121,9 +121,6 @@
 
 .ms-ie7 .ms-tooltip-arrow{height:0px;}
 
-.ms-nav-next:hover,
-.ms-nav-prev:hover{background-color: #088fa9;}
-
 .ms-nav-next{
 	left: auto;
 	right: 30px;
