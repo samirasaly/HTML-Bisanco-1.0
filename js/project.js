@@ -53,7 +53,6 @@ slider.setup('masterslider' , {
   height:580,
   loop:true,
   autoplay:true,
-  autoHeight:true,
   fullwidth:true,
   overPause:false,
   centerControls:false,
