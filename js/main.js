@@ -297,9 +297,7 @@
 			contentEl = item.querySelector('.slide__content'),
 			largeImgEl = contentEl.querySelector('.slide__img--large'),
 			titleEl = contentEl.querySelector('.slide__title--main'),
-			descriptionEl = contentEl.querySelector('.slide__description'),
-			priceEl = contentEl.querySelector('.slide__price'),
-			buyEl = contentEl.querySelector('.button--buy');
+			descriptionEl = contentEl.querySelector('.slide__description');
 
 		// add slide--open class to the item
 		classie.add(item, 'slide--open');
@@ -314,10 +312,7 @@
 		dynamics.css(titleEl, {translateY : 600, opacity: 0});
 		// - description
 		dynamics.css(descriptionEl, {translateY : 400, opacity: 0});
-		// - price
-		dynamics.css(priceEl, {translateY : 400, opacity: 0});
-		// - buy button
-		dynamics.css(buyEl, {translateY : 400, opacity: 0});
+
 
 		// animate (scale up) the expander element
 		dynamics.animate(expanderEl, 
@@ -370,38 +365,38 @@
 		);
 
 		// animate the price element in
-		dynamics.animate(priceEl, 
-			{
-				translateY : 0, opacity : 1
-			}, 
-			{
-				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 600
-			}
-		);
+		// dynamics.animate(priceEl, 
+		// 	{
+		// 		translateY : 0, opacity : 1
+		// 	}, 
+		// 	{
+		// 		type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 600
+		// 	}
+		// );
 
 		// animate the buy element in
-		dynamics.animate(buyEl, 
-			{
-				translateY : 0, opacity : 1
-			}, 
-			{
-				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100, delay: 100,
-				complete: function() {
-					// add .noscroll to body and .scrollable to .slide__content
-					classie.add(bodyEl, 'noscroll');
-					classie.add(contentEl, 'scrollable');
+	// 	dynamics.animate(buyEl, 
+	// 		{
+	// 			translateY : 0, opacity : 1
+	// 		}, 
+	// 		{
+	// 			type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100, delay: 100,
+	// 			complete: function() {
+	// 				// add .noscroll to body and .scrollable to .slide__content
+	// 				classie.add(bodyEl, 'noscroll');
+	// 				classie.add(contentEl, 'scrollable');
 					
-					// force redraw (chrome)
-					contentEl.style.display = 'none';
-					contentEl.offsetHeight;
-					contentEl.style.display = 'block';
+	// 				// force redraw (chrome)
+	// 				contentEl.style.display = 'none';
+	// 				contentEl.offsetHeight;
+	// 				contentEl.style.display = 'block';
 					
-					// allow scrolling
-					classie.remove(bodyEl, 'lockscroll');
-				}
-			}
-		);
-	};
+	// 				// allow scrolling
+	// 				classie.remove(bodyEl, 'lockscroll');
+	// 			}
+	// 		}
+	// 	);
+	// };
 
 	CircleSlideshow.prototype._closeContent = function() {
 		this.isClosed = true;
@@ -413,9 +408,7 @@
 			contentEl = item.querySelector('.slide__content'),
 			largeImgEl = contentEl.querySelector('.slide__img--large'),
 			titleEl = contentEl.querySelector('.slide__title--main'),
-			descriptionEl = contentEl.querySelector('.slide__description'),
-			priceEl = contentEl.querySelector('.slide__price'),
-			buyEl = contentEl.querySelector('.button--buy');
+			descriptionEl = contentEl.querySelector('.slide__description');
 
 		// add slide--close class to the item
 		classie.add(item, 'slide--close');
@@ -425,26 +418,26 @@
 		classie.remove(contentEl, 'scrollable');
 
 		// animate the buy element out
-		dynamics.stop(buyEl);
-		dynamics.animate(buyEl, 
-			{
-				translateY : 400, opacity : 0
-			}, 
-			{
-				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100
-			}
-		);
+		// dynamics.stop(buyEl);
+		// dynamics.animate(buyEl, 
+		// 	{
+		// 		translateY : 400, opacity : 0
+		// 	}, 
+		// 	{
+		// 		type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100
+		// 	}
+		// );
 
 		// animate the price element out
-		dynamics.stop(priceEl);
-		dynamics.animate(priceEl, 
-			{
-				translateY : 400, opacity : 0
-			}, 
-			{
-				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100
-			}
-		);
+		// dynamics.stop(priceEl);
+		// dynamics.animate(priceEl, 
+		// 	{
+		// 		translateY : 400, opacity : 0
+		// 	}, 
+		// 	{
+		// 		type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100
+		// 	}
+		// );
 
 		// animate the description element out
 		dynamics.stop(descriptionEl);

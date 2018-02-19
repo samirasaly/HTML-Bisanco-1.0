@@ -303,9 +303,6 @@
 
 		// add slide--open class to the item
 		classie.add(item, 'slide--open');
-		// prevent scrolling
-		bodyEl.style.top = -scrollY() + 'px';
-		classie.add(bodyEl, 'lockscroll');
 		
 		// position the content elements:
 		// - image (large image)

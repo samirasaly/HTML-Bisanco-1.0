@@ -54,21 +54,21 @@
 
 			<header class="header">
 
-				<div class="nav-toggle">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div><!-- nav-toggle end -->
-				
-				
 				<div class="navigation">
+					<div class="nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div><!-- nav-toggle end -->
 					<div class="frame small">	
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li class="logo"><a href="#"><img src="images/logo.jpg" alt=""/></a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Contact</a></li>
+						<div class="logo">
+							<a href="#"><img src="images/logo.jpg" alt=""/></a>
+						</div>
+						<ul class="nav-items">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#products">Products</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div><!-- frame end -->		
 				</div><!-- navigation end -->
@@ -76,7 +76,7 @@
 			</header><!-- header end -->
 
 			<div class="body">
-				<div class="banner">
+				<div class="banner" id="home">
 					<div class="ms-layers-template">
 	                    <div class="master-slider" id="masterslider">
 
@@ -122,21 +122,21 @@
 	                    </div><!-- master-slider end -->
 	                </div><!-- ms-layers-template end -->
 				</div><!-- banner -->
-				<div class="about-us section-wrapper has-5-7-column">
-					<div class="section">
-						<div class="about-image-box">
-							<p>&nbsp;</p>
-						</div><!-- about-image-box end -->
-					</div><!-- section end -->
-					<div class="section">
+				<div id="about" class="about-us section-wrapper has-7-5-column">
+					<div class="section right-floated about-us-content-wrapper">
 						<div class="frame small about-us-content white-color">
 							<h6 class="center-aligned white-color">Know more</h6>
 							<h2 class="center-aligned white-color">About us</h2>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
 						</div><!-- frame end -->
 					</div><!-- section end -->
+					<div class="section about-image-wrapper">
+						<div class="about-image-box">
+							<p>&nbsp;</p>
+						</div><!-- about-image-box end -->
+					</div><!-- section end -->
 				</div><!-- about-us end -->
-				<div class="product-wrapper">
+				<div id="products" class="product-wrapper">
 					<h6 class="center-aligned">See our</h6>
 					<h2 class="center-aligned has-xlarge-bottom-margin">Products</h2>
 					<div id="slideshow" class="slideshow">
@@ -154,10 +154,10 @@
 									<div class="slide__details">
 										<h2 class="slide__title slide__title--main">Lorem ipsum dolor sit amet</h2>
 										<p class="slide__description">consectetur adipiscing elit</p>
-										<div>
-											<span class="slide__price slide__price--large">$39</span>
+										<div class="product-slider-buttons">
+											<span class="slide__price slide__price--large"></span>
 											<button class="button button--buy">Add to cart</button>
-										</div>
+										</div><!-- product-slider-buttons end -->
 									</div><!-- /slide__details -->
 								</div><!-- slide__content-scroller -->
 							</div><!-- slide__content -->
@@ -176,10 +176,10 @@
 									<div class="slide__details">
 										<h2 class="slide__title slide__title--main">Grapeseed Skin Oil</h2>
 										<p class="slide__description">Moisture control for all skin types</p>
-										<div>
+										<div class="product-slider-buttons">
 											<span class="slide__price slide__price--large">$19</span>
 											<button class="button button--buy">Add to cart</button>
-										</div>
+										</div><!-- product-slider-buttons end -->
 									</div>
 								</div>
 							</div>
@@ -198,10 +198,10 @@
 									<div class="slide__details">
 										<h2 class="slide__title slide__title--main">Jojoba Skin Oil</h2>
 										<p class="slide__description">Protection for sensitive skin</p>
-										<div>
+										<div class="product-slider-buttons">
 											<span class="slide__price slide__price--large">$35</span>
 											<button class="button button--buy">Add to cart</button>
-										</div>
+										</div><!-- product-slider-buttons end -->
 									</div>
 								</div>
 							</div>
@@ -216,7 +216,8 @@
 	                            <img src="images/assets/blank.gif" data-src="images/recipes/recipe-bg1.jpg" alt="Slider Image 1"/>
 	                            <div class="ms-layer"
 	                            	data-origin="mc"
-	                            	data-offset-y="-70"
+									data-offset-x="0"
+									data-offset-y="80"
 	                                data-duration="1500"
 	                                data-delay="100"
 	                                data-ease="fadeIn"
@@ -281,7 +282,9 @@
 	                            <img src="images/assets/blank.gif" data-src="images/recipes/recipe-bg2.jpg" alt="Slider Image 2"/>
 	                            <div class="ms-layer"
 	                            	data-origin="mc"
-	                            	data-offset-y="-70"
+									data-offset-x="0"
+									data-offset-y="80"
+									data-resize="true"
 	                                data-duration="1500"
 	                                data-delay="100"
 	                                data-ease="fadeIn"
@@ -346,7 +349,7 @@
 						</div><!-- master-slider end -->
 					</div><!-- ms-layers-template end -->
 				</div><!-- recipes-wrapper end -->
-				<div class="contact-us-wrapper">
+				<div id="contact" class="contact-us-wrapper">
 					<div class="section-wrapper has-7-5-column">
 						<div class="section">
 							<div class="frame small has-xlarge-top-padding">
@@ -381,7 +384,7 @@
 										<span>Iran, Tehran, Valiasr Street, Rose Building, No 123</span>
 									</div><!-- cl-8 end -->
 									<div class="cl-4 right-side right-aligned">
-										<span>+ 21 2232 44 02</span>
+										<a href="tel:00982122324402">+ 21 2232 44 02</a>
 									</div><!-- cl-4 end -->
 								</div><!-- contact-info end -->
 								<div class="social-wrapper has-medium-top-margin center-aligned">
@@ -395,7 +398,7 @@
 										<span>Copyright &copy; Bisan Group Co</span>
 									</div><!-- cl-8 end -->
 									<div class="cl-5 right-side right-aligned">
-										<span>Created by  <a href="http://samanrashidi.com/samanira/index.html">SamanirA</a></span>
+										<span>Created by  <a href="http://samanrashidi.com/samanira">SamanirA</a></span>
 									</div><!-- cl-4 end -->
 								</div><!-- footer end -->	
 							</div><!-- frame end -->

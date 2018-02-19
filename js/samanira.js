@@ -59,6 +59,13 @@ $('.switch').on('click', function(){
 
 $('.nav-toggle').on('click', function(){
   $(this).toggleClass('active');
+  $('.nav-items').toggleClass('open');
+});
+
+// Nav Toggle //
+
+$('.nav-items a').on('click', function(){
+  $('.nav-items').removeClass('open');
 });
 
 // Remove Button //

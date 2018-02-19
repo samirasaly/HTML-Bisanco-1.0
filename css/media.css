@@ -3,7 +3,6 @@
 @media only screen and (max-width: 1200px){
 
 
-
 }
 
 						/*            1200px Screen End        */
@@ -12,6 +11,28 @@
 
 @media only screen and (max-width:980px){
 
+	.about-us-content{padding-top: 20px;}
+	.about-us.has-7-5-column > .section:nth-child(2n+1){margin-left:0 !important;}
+
+	.about-us{height: 100%;}
+
+	.about-image-box{min-height:300px;}
+
+	.about-us-content-wrapper{
+		height: 100%;
+		padding:10px 0 50px 0;
+	 }
+
+	 .js .slide__content-scroller{margin-top: 20px;}
+	 .action--close{top:3px;}
+
+	 .inner-recipes-box .has-5-7-column > .section{
+	 	float: left !important;
+	 	width: 40.625% !important;
+	 	margin-left: 2.5% !important;
+	 }
+
+	 .inner-recipes-box .has-5-7-column > .section:nth-child(2n+1){margin-left: 0 !important;}
 
 	
 }
@@ -32,7 +53,7 @@
 
 @media only screen and (max-width:740px){
 
-
+	.action.action--open i{font-size: 21px;}
 
 }
 
@@ -42,7 +63,7 @@
 
 @media only screen and (max-width:640px){
 
-
+	
 
 }
 
@@ -52,6 +73,64 @@
 
 @media only screen and (max-width: 560px){
 
+	#wrapper{padding-top: 76px;}
+
+	.navigation,
+	.navigation.sticky{padding:34px 0 42px 0;}
+
+	.navigation .nav-items {
+	    position: absolute;
+	    top: 75px;
+	    left: 0;
+	    display: block;
+	    width: 100%;
+	    background: #ffffff;
+	    border-bottom: 1px solid #e6e6e6;
+		z-index: 9999999999;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.navigation .nav-items.open{
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.navigation ul li {
+	    display: block;
+	    margin-right: 0;
+	}
+
+	.navigation ul li:nth-child(2),
+	.navigation ul li:nth-child(3),
+	.navigation.sticky ul li:nth-child(2){margin:0;}
+
+	.navigation ul li a {
+	    display: block;
+	    color:#464653;
+	    padding:10px 0;
+	    background-color: #ffffff;
+	    border-top: 1px solid #e6e6e6;
+	    border-radius: 0;
+	}
+
+	.logo,
+	.navigation.sticky .logo{
+		left: auto;
+		right: 0;
+		top: 8px;
+	}
+
+	.logo img{width: 50%;}
+
+	.navigation.sticky ul li:not(.logo) a{
+		-webkit-transform: translateY(0); 
+		-moz-transform: translateY(0);
+		transform: translateY(0); 
+	}
+
+	.current-item-nav a,
+	.navigation ul li a:hover{background-color:#a1bf88 !important;}
 
 
 }
