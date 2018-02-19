@@ -333,16 +333,9 @@
 
 /* Helper classes */
 
-.lockscroll {
-	position: fixed;
-	overflow-y: scroll;
-	height: 100vh;
-}
-
 .noscroll {
 	overflow: hidden;
-	height: 100vh;
-	position: fixed;
+	top:auto !important;
 }
 
 .noscroll .deco--expander {
