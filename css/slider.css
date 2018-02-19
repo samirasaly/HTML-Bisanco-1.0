@@ -142,9 +142,9 @@
 
 .ms-bullet{
 	display: inline-block;
-	width: 9px;
-	height: 9px;
-	margin: 4px;
+	width: 10px;
+	height: 10px;
+	margin: 3px;
 	background: #ffffff;
 	border-radius: 50%;
 	-webkit-transition: all .2s ease-in-out;
@@ -152,12 +152,7 @@
 	transition: all .2s ease-in-out;
 }
 
-.ms-bullet-selected{
-	width: 10px;
-	height: 10px;
-	margin: 4px;
-	background-color: #81a862;
-}
+.ms-bullet-selected{background-color: #81a862;}
 
 .ms-sbar{position: absolute;}
 
