@@ -126,14 +126,9 @@ $('.fancybox-thumbs').fancybox({
 // Header Scroll
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
-
-	 //>=, not <=
-	if (scroll >= 200) {
-	    //clearHeader, not clearheader - caps H
+	if (scroll > 0) {
 	    $(".navigation").addClass("sticky");
-	}
-	if (scroll < 200) {
-	    //clearHeader, not clearheader - caps H
+	} else{
 	    $(".navigation").removeClass("sticky");
 	}
 }); //missing );
