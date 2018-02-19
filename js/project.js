@@ -31,7 +31,7 @@ $(window).scroll(function(){
         var divPos = $(theID);
         if (divPos.length) {
           if($(window).width() > 980){
-            var divPos = divPos.offset().top - 322;
+            var divPos = divPos.offset().top - 70;
           } else{
             var divPos = divPos.offset().top;
           }
@@ -50,7 +50,7 @@ $(window).scroll(function(){
 var slider = new MasterSlider();
 slider.setup('masterslider' , {
   width:1920,
-  height:580,
+  height:860,
   loop:true,
   autoplay:true,
   fullwidth:true,
@@ -67,41 +67,16 @@ slider.control('bullets' , {
 var slider = new MasterSlider();
 slider.setup('masterslider2' , {
 	width:1920,
-	height:1280,
+	height:1400,
 	loop:true,
-	autoplay:true,
+	autoplay:false,
 	fullwidth:true,
-	// autoHeight:true,
 	overPause:false,
 	centerControls:false,
 	speed:14,
 	view:'fade'
 });
 slider.control('arrows' , {autohide:false});
-
-// Recipe Slider Responsive
-
-if($(window).width() < 1300){
-  slider.setup('masterslider2' , {
-	height:1580
-	});
-}
-
-if($(window).width() < 1080){
-  slider.setup('masterslider2' , {
-	height:1880
-	});
-}
-
-if($(window).width() < 980){
-  slider.setup('masterslider2' , {
-	height:2580
-	});
-}slider.control(
-	'bullets' , {
-	autohide:false  
-	});
-slider.control('arrows' , {autohide:true});
 
 // Image gallery
 
@@ -126,12 +101,12 @@ $('.fancybox-thumbs').fancybox({
 // Header Scroll
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
-	if (scroll > 0) {
+	if (scroll > 76) {
 	    $(".navigation").addClass("sticky");
 	} else{
 	    $(".navigation").removeClass("sticky");
 	}
-}); //missing );
+});
 
 });
 
