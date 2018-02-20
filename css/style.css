@@ -48,8 +48,8 @@ body.noscroll .navigation{z-index: 9;}
 	transition:all .2s ease-in-out;
 }
 
-.current-item-nav a{background-color:#f99f31 !important;}
 .navigation ul li a:hover{background-color:#608444;}
+.current-item-nav a{background-color:#f99f31 !important;}
 
 .language-select{
 	position: absolute;

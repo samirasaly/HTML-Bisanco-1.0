@@ -47,6 +47,7 @@ $(window).scroll(function(){
 });
 
 // Slider
+
 var slider = new MasterSlider();
 slider.setup('masterslider' , {
   width:1920,
@@ -65,6 +66,7 @@ slider.control('bullets' , {
 });
 
 // Recipe Slider
+
 var slider = new MasterSlider();
 slider.setup('masterslider2' , {
 	width:1920,
@@ -79,7 +81,7 @@ slider.setup('masterslider2' , {
 });
 slider.control('arrows' , {autohide:false,});
 
-// Image gallery
+// Recipe Image Gallery
 
 $('.fancybox-thumbs').fancybox({
 	prevEffect : 'none',
@@ -99,7 +101,8 @@ $('.fancybox-thumbs').fancybox({
 	}
 });
 
-// Header Scroll
+// Sticky Header 
+
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
 	if (scroll > 76) {
@@ -111,7 +114,7 @@ $(window).scroll(function() {
 
 });
 
-// Form Validate
+// Contact us Form Validate
 
 $('.contact-form').validate({
 rules: {
@@ -143,3 +146,44 @@ submitHandler: function (form) {
 }
 
 });
+
+
+// Hide Header on on scroll down
+
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.navigation').outerHeight();
+
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+
+  function hasScrolled() {
+      var st = $(this).scrollTop();
+      
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+      
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.navigation').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+          $('.navigation').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+      
+      lastScrollTop = st;
+    }
