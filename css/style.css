@@ -51,6 +51,26 @@ body.noscroll .navigation{z-index: 9;}
 .current-item-nav a{background-color:#f99f31 !important;}
 .navigation ul li a:hover{background-color:#608444;}
 
+.language-select{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.language-select a.bttn{
+    min-width: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 6px;
+    background-color: #f99f31;
+    border-radius: 3px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.language-select a.bttn:hover{background-color: #de8614;}
+
 .logo{
 	position: absolute;
 	left: 50%;
@@ -88,9 +108,6 @@ body.noscroll .navigation{z-index: 9;}
 
 .about-us > .section{height: 100%;}
 
-.about-us.has-7-5-column > .section{margin-left: 0 !important;}
-.about-us.has-7-5-column > .section:nth-child(2n+1){margin-left:2.5% !important;}
-
 .about-image-box{
 	height: 100%;
 	background-image: url('../images/about-us.jpg');
@@ -112,10 +129,32 @@ body.noscroll .navigation{z-index: 9;}
 
 .product-wrapper{
 	position: relative;
+	background: #f0f0f0;
 	z-index: 999;
 }
 
-.slideshow{margin:0;}
+.product-wrapper a {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+
+.product-wrapper a:hover,
+.product-wrapper a:focus {
+	color: #414146;
+}
+
+.slideshow{
+	padding:15px 0;
+	margin:0;
+}
+
+.js .slide--open .slide__content{display: table !important;}
+
+.slide__content-scroller{
+	display: table-cell;
+	vertical-align: middle;
+}
 
 .deco--expander,
 .deco--circle{border-radius: 3px;}
@@ -290,6 +329,14 @@ ul.recipe-description-list-items li::before {
 	background-image: url('../images/assets/next-slider.png');
 	background-position: unset;
 }
+
+.contact-us-wrapper > .has-7-5-column > .section,
+.about-us.has-7-5-column > .section{margin-left: 0;}
+
+.contact-us-wrapper .has-7-5-column > .section:nth-child(2n+1),
+.about-us.has-7-5-column > .section:nth-child(2n+1){width: 59.375%;}
+
+.contact-form-wrapper{border-right: 1px solid #464653;}
 
 .social-wrapper a,
 .social-wrapper span{
