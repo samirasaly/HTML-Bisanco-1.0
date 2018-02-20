@@ -2,6 +2,11 @@
 
 @media only screen and (max-width: 1200px){
 
+	.ms-slide .ms-layer{
+		-webkit-transform: scale(.8, .8);
+		-moz-transform: scale(.8, .8);
+		transform: scale(.8, .8);
+	}
 
 }
 
@@ -14,7 +19,8 @@
 	.about-us-content{padding-top: 20px;}
 	.about-us.has-7-5-column > .section:nth-child(2n+1){margin-left:0 !important;}
 
-	.about-us{height: 100%;}
+	.about-us{height: auto;}
+	.about-image-wrapper{height: 320px !important;}
 
 	.about-image-box{min-height:300px;}
 
@@ -26,13 +32,11 @@
 	 .js .slide__content-scroller{margin-top: 20px;}
 	 .action--close{top:3px;}
 
-	 .inner-recipes-box .has-5-7-column > .section{
-	 	float: left !important;
-	 	width: 40.625% !important;
-	 	margin-left: 2.5% !important;
-	 }
+	 .recipes-wrapper{display: none;}
 
-	 .inner-recipes-box .has-5-7-column > .section:nth-child(2n+1){margin-left: 0 !important;}
+	 #map_canvas{height: 400px;}
+
+	 .contact-us-wrapper .frame{max-width: 100% !important;}
 
 	
 }
@@ -114,11 +118,11 @@
 	    border-radius: 0;
 	}
 
-	.logo,
-	.navigation.sticky .logo{
-		left: auto;
-		right: 0;
-		top: 8px;
+	.logo{
+		top:8px !important;
+		left:auto;
+		right: 10px;
+		width:46px !important;
 	}
 
 	.logo img{width: 50%;}
@@ -132,6 +136,8 @@
 	.current-item-nav a,
 	.navigation ul li a:hover{background-color:#a1bf88 !important;}
 
+	.ms-bullets.ms-dir-h{bottom:0;}
+
 
 }
 
@@ -141,7 +147,7 @@
 
 @media only screen and (max-width:400px){
 
-
+	#map_canvas{height: 300px;}
 
 }
 

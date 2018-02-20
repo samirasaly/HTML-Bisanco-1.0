@@ -50,7 +50,7 @@ $(window).scroll(function(){
 var slider = new MasterSlider();
 slider.setup('masterslider' , {
   width:1920,
-  height:860,
+  height:780,
   loop:true,
   autoplay:true,
   fullwidth:true,
