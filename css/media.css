@@ -157,6 +157,12 @@
 	.ms-layer h4{font-size:17px;}
 	.ms-layer h5{font-size:15px;}
 	.ms-layer h6{font-size:14px;}
+
+	.language-select {
+	    right: 72px;
+	    bottom: 50%;
+	    margin-bottom: -15px;
+	}
 	
 
 }
