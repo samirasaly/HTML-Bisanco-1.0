@@ -60,7 +60,8 @@ slider.setup('masterslider' , {
   view:'fade'
 });
 slider.control('bullets' , {
-	autohide:false  
+	autohide:false,
+	hideUnder:560
 });
 
 // Recipe Slider
@@ -76,7 +77,7 @@ slider.setup('masterslider2' , {
 	speed:14,
 	view:'fade'
 });
-slider.control('arrows' , {autohide:false});
+slider.control('arrows' , {autohide:false,});
 
 // Image gallery
 
