@@ -62,14 +62,14 @@ body.noscroll .navigation{z-index: 9;}
     font-size: 12px;
     color: #ffffff;
     padding: 6px;
-    background-color: #f99f31;
+    background-color: #02a897;
     border-radius: 3px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-.language-select a.bttn:hover{background-color: #de8614;}
+.language-select a.bttn:hover{background-color: #018274;}
 
 .logo{
 	position: absolute;
@@ -110,12 +110,12 @@ body.noscroll .navigation{z-index: 9;}
 
 .about-image-box{
 	height: 100%;
-	background-image: url('../images/about-us.jpg');
+	background:url('../images/about-us.jpg') no-repeat right center;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
-.about-us-content{padding-top: 150px;}
+.about-us-content{padding-top: 145px;}
 
 .product-wrapper:before{
 	content: '';
