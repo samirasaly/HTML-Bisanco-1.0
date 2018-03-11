@@ -93,7 +93,7 @@
 
 @media only screen and (max-width:640px){
 
-	.navigation.nav-up{top:-97px;}
+	.navigation.nav-up{top:-76px;}
     .navigation.nav-down{top:0;}
 	
 	#wrapper{padding-top: 76px;}
@@ -112,6 +112,9 @@
 		z-index: 9999999999;
 		visibility: hidden;
 		opacity: 0;
+		-webkit-transition:all .2s ease-in-out;
+		-moz-transition:all .2s ease-in-out;
+		transition:all .2s ease-in-out;
 	}
 
 	.navigation .nav-items.open{
