@@ -11,6 +11,15 @@ $('.navigation ul li a').click(function(event) {
     }, 1000, "easeInOutQuint");
 });	
 
+$('.ms-layer a.bttn').click(function(event) {
+  event.preventDefault();
+    var id = $(this).attr("href");
+    var target = $(id).offset().top;
+    $('html, body').animate({
+        scrollTop: target
+    }, 1000, "easeInOutQuint");
+}); 
+
 // Navigation Section Change
 
 var aChildren = $(".navigation li").children();

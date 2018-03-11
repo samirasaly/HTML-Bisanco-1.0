@@ -99,9 +99,11 @@ body.noscroll .navigation{z-index: 9;}
 
 .ms-slide .ms-slide-bgcont img{margin-top: 0 !important;}
 
+.about-us-content-wrapper p{padding-top: 10px !important;}
+
 .about-us{
 	position: relative;
-	height:700px;
+	height:666px;
 	background-color: #81a862;
 	z-index: 9;
 }
@@ -115,7 +117,8 @@ body.noscroll .navigation{z-index: 9;}
 	background-size: cover;
 }
 
-.about-us-content{padding-top: 145px;}
+.about-us-content{padding-top: 70px;}
+
 
 .product-wrapper:before{
 	content: '';
