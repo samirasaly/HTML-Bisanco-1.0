@@ -165,7 +165,12 @@ body.noscroll .navigation{z-index: 9;}
 	background: transparent;
 }
 
-.action--open:hover{background: transparent;}
+.action--open:hover{
+	cursor: pointer;
+	background: transparent;
+}
+
+.navbutton:hover{cursor: pointer;}
 
 .action.action--open i{
 	font-size: 28px;
