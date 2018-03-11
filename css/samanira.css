@@ -546,13 +546,10 @@ label.error{
 
 .bttn.site{
 	color:#ffffff;
-	background-color: #00afbb;
+	background-color: #81a862;
 }
 
-.bttn.site:hover{
-	color:#00afbb;
-	background-color: #ffffff;
-}
+.bttn.site:hover{background-color: #608444;}
 
 .bttn.site-2{
 	color:#000000;
