@@ -152,7 +152,7 @@ body.noscroll .navigation{z-index: 9;}
 	margin:0;
 }
 
-.js .slide--open .slide__content{display: table !important;}
+/*.js .slide--open .slide__content{display: table !important;}*/
 
 .slide__content-scroller{
 	display: table-cell;
@@ -216,21 +216,21 @@ body.noscroll .navigation{z-index: 9;}
 
 ul.recipe-description-list-items li {
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 23px;
-    padding: 0px 8px 0 33px;
-    margin: 15px 0;
+    padding: 0px 8px 0 28px;
+    margin: 10px 0;
 }
 
 ul.recipe-description-list-items li::before {
     content: attr(recipe-data);
     position: absolute;
-    top: -2px;
+    top: 2px;
     left: 0;
-    width: 25px;
-    height: 25px;
-    line-height: 22px;
-    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 11px;
     color: #b3b3b3;
     text-align: center;
     background-color: #ffffff;
@@ -346,6 +346,8 @@ ul.recipe-description-list-items li::before {
 
 .contact-form-wrapper{border-right: 1px solid #464653;}
 
+.contact-inner-box a:hover{color:#81a862;}
+
 .social-wrapper a,
 .social-wrapper span{
 	display: inline-block;
@@ -361,6 +363,8 @@ ul.recipe-description-list-items li::before {
 a.instagram{background: url('../images/icons/instagram.png') no-repeat center;}
 a.facebook{background: url('../images/icons/facebook.png') no-repeat center;}
 a.twitter{background: url('../images/icons/twitter.png') no-repeat center;}
+a.whatsapp{background: url('../images/icons/whatsapp.png') no-repeat center;}
+a.viber{background: url('../images/icons/viber.png') no-repeat center;}
 
 .social-wrapper a:hover{opacity: .8;}
 
@@ -368,7 +372,22 @@ a.twitter{background: url('../images/icons/twitter.png') no-repeat center;}
 .footer span a{color: #81a862;}
 .footer span a:hover{color: #f36f2f;}
 
-.product-slider-buttons{display: none;}
+.product-slider-buttons span,
+.product-slider-buttons button,
+.slide__description{display: none !important;}
+
+.table-wrapper{
+	max-width: 530px;
+	margin:0 auto;
+}
+
+.table-wrapper .table{border:1px solid #e2dada;}
+
+.table-wrapper .table td:first-child{
+	background-color: #ececec;
+	border-bottom: 1px solid #e2dada;
+}
+
 
 /*   Added Styles by Back-end   */
 
