@@ -187,7 +187,8 @@
 		var self = this,
 			itemCurrent = this.items[this.current],
 			currentEl = itemCurrent.querySelector('.slide__item'),
-			currentTitleEl = itemCurrent.querySelector('.slide__title');
+			currentTitleEl = itemCurrent.querySelector('.slide__title'),
+			currentTableBox = itemCurrent.querySelector('.table-wrapper table');
 
 		// update new current value
 		if( dir === 'right' ) {
@@ -199,7 +200,8 @@
 
 		var itemNext = this.items[this.current],
 			nextEl = itemNext.querySelector('.slide__item'),
-			nextTitleEl = itemNext.querySelector('.slide__title');
+			nextTitleEl = itemNext.querySelector('.slide__title'),
+			nextTableBox = itemNext.querySelector('.table-wrapper table');
 		
 		// animate the current element out
 		dynamics.animate(currentEl, 
@@ -216,6 +218,16 @@
 
 		// animate the current title out
 		dynamics.animate(currentTitleEl, 
+			{
+				translateX: dir === 'right' ? -250 : 250, opacity: 0
+			}, 
+			{
+				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 450
+			}
+		);
+
+		// animate the current Tablebpx out
+		dynamics.animate(currentTableBox, 
 			{
 				translateX: dir === 'right' ? -250 : 250, opacity: 0
 			}, 
@@ -246,6 +258,18 @@
 		dynamics.css(nextTitleEl, { translateX: dir === 'right' ? 250 : -250, opacity: 0 });
 		// animate the next title in
 		dynamics.animate(nextTitleEl, 
+			{
+				translateX: 0, opacity: 1
+			}, 
+			{
+				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000
+			}
+		);
+
+		// set the right properties for the next tablebox to come in
+		dynamics.css(nextTableBox, { translateX: dir === 'right' ? 250 : -250, opacity: 0 });
+		// animate the next title in
+		dynamics.animate(nextTableBox, 
 			{
 				translateX: 0, opacity: 1
 			}, 
@@ -297,6 +321,7 @@
 			contentEl = item.querySelector('.slide__content'),
 			largeImgEl = contentEl.querySelector('.slide__img--large'),
 			titleEl = contentEl.querySelector('.slide__title--main'),
+			tableBox = contentEl.querySelector('.table-wrapper table'),
 			descriptionEl = contentEl.querySelector('.slide__description'),
 			priceEl = contentEl.querySelector('.slide__price'),
 			buyEl = contentEl.querySelector('.button--buy');
@@ -309,6 +334,8 @@
 		dynamics.css(largeImgEl, {translateY : 800, opacity: 0});
 		// - title
 		dynamics.css(titleEl, {translateY : 600, opacity: 0});
+		// - table
+		dynamics.css(tableBox, {translateY : 600, opacity: 0});
 		// - description
 		dynamics.css(descriptionEl, {translateY : 400, opacity: 0});
 		// - price
@@ -348,6 +375,16 @@
 
 		// animate the title element in
 		dynamics.animate(titleEl, 
+			{
+				translateY : 0, opacity : 1
+			}, 
+			{
+				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 400
+			}
+		);
+
+		// animate the title element in
+		dynamics.animate(tableBox, 
 			{
 				translateY : 0, opacity : 1
 			}, 
@@ -410,6 +447,7 @@
 			contentEl = item.querySelector('.slide__content'),
 			largeImgEl = contentEl.querySelector('.slide__img--large'),
 			titleEl = contentEl.querySelector('.slide__title--main'),
+			tableBox = contentEl.querySelector('.table-wrapper table'),
 			descriptionEl = contentEl.querySelector('.slide__description'),
 			priceEl = contentEl.querySelector('.slide__price'),
 			buyEl = contentEl.querySelector('.button--buy');
@@ -457,6 +495,17 @@
 		// animate the title element out
 		dynamics.stop(titleEl);
 		dynamics.animate(titleEl, 
+			{
+				translateY : 600, opacity : 0
+			}, 
+			{
+				type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 100, delay: 0
+			}
+		);
+
+		// animate the TableBox element out
+		dynamics.stop(tableBox);
+		dynamics.animate(tableBox, 
 			{
 				translateY : 600, opacity : 0
 			}, 

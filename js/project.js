@@ -79,7 +79,7 @@ slider.control('bullets' , {
 var slider = new MasterSlider();
 slider.setup('masterslider2' , {
 	width:1920,
-	height:1200,
+	height:1300,
 	loop:true,
 	autoplay:false,
 	fullwidth:true,
