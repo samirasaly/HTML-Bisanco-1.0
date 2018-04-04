@@ -125,6 +125,8 @@ $(window).scroll(function() {
 
 // Contact us Form Validate
 
+$('.number-field').numeric();
+
 $('.contact-form').validate({
 rules: {
 		full_name: {
@@ -142,16 +144,34 @@ rules: {
 	},
 	phone: {
 		required: true,
-		minlength: 5,
-		number:true
-	}
+		minlength: 8
+	},
 },
 errorPlacement: function(error, element) {
 	return false;
 	alert('error');
 },
 submitHandler: function (form) {
-	$('.thank-you').addClass('active');        
+	{
+    if($('.contact-form').val() == '') {
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(form).serialize(),
+        success: function () {
+            $('.contact_form :input').prop('disabled', true);
+            $('.thank-you').addClass('active');
+            setTimeout(function(){
+              $('.thank-you').removeClass('active');
+            },5000);
+        }
+      });
+      return false; // required to block normal submit since you used ajax
+    } else {
+      $('.contact_form input[type="submit"]').prop('disabled', true);
+      return false;
+    }
+  }     
 }
 
 });
