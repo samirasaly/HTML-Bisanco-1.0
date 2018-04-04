@@ -366,6 +366,12 @@ a.twitter{background: url('../images/icons/twitter.png') no-repeat center;}
 a.whatsapp{background: url('../images/icons/whatsapp.png') no-repeat center;}
 a.viber{background: url('../images/icons/viber.png') no-repeat center;}
 
+.shrimp{
+	width: 32px;
+	height: 32px;
+	background: url('../images/icons/shrimp.png') no-repeat center;
+}
+
 .social-wrapper a:hover{opacity: .8;}
 
 .footer span{font-family: 'Oswald';}
@@ -386,6 +392,20 @@ a.viber{background: url('../images/icons/viber.png') no-repeat center;}
 .table-wrapper .table td:first-child{
 	background-color: #ececec;
 	border-bottom: 1px solid #e2dada;
+}
+
+.thank-you-wrapper{
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
+}
+
+.inner-thank-you{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
 }
 
 
