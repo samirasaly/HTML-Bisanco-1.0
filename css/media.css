@@ -19,6 +19,8 @@
 	.about-us-content{padding-top: 20px;}
 	.about-us.has-7-5-column > .section:nth-child(2n+1){margin-left:0 !important;}
 
+	.product-wrapper::before{display: none;}
+
 	.about-us{height: auto;}
 	.about-image-wrapper{height: 320px !important;}
 
@@ -29,12 +31,18 @@
 		padding:10px 0 50px 0;
 	 }
 
-	 .js .slide__content-scroller{margin-top: 20px;}
-
 	 .action--close{
 	 	top:0px;
-	 	right: 2px;
+	 	right: 0;
 	 }
+
+	 .action{
+	 	line-height: 30px;
+	    width: 30px;
+	    height: 30px;
+	 }
+
+	 .navbutton{width:120px;}
 
 	 .recipes-wrapper{display: none;}
 

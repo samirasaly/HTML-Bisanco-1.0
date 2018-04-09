@@ -23,8 +23,6 @@
 	transition:all .2s ease-in-out;
 }
 
-body.noscroll .navigation{z-index: 9;}
-
 .navigation ul{display:inline-block;}
 
 .navigation ul li{
@@ -120,7 +118,7 @@ body.noscroll .navigation{z-index: 9;}
 .about-us-content{padding-top: 78px;}
 
 
-.product-wrapper:before{
+/*.product-wrapper:before{
 	content: '';
 	position: absolute;
 	top: -236px;
@@ -128,13 +126,12 @@ body.noscroll .navigation{z-index: 9;}
 	width: 100%;
 	height: 236px;
 	background: url('../images/assets/shape-4.png') no-repeat;
-}
+}*/
 
 .product-wrapper{
 	position: relative;
-	padding-top: 50px;
+	padding: 50px 0;
 	background: #f0f0f0;
-	z-index: 999;
 }
 
 .product-wrapper a {
@@ -153,19 +150,12 @@ body.noscroll .navigation{z-index: 9;}
 	margin:0;
 }
 
-/*.js .slide--open .slide__content{display: table !important;}*/
-
-.slide__content-scroller{
-	display: table-cell;
-	vertical-align: middle;
-}
-
 .deco--expander,
 .deco--circle{border-radius: 3px;}
 
 .action--open{
 	right: 50%;
-	margin: 0 -25px 10px 0;
+	margin: 0 -15px 35px 0;
 	background: transparent;
 }
 
@@ -183,7 +173,7 @@ body.noscroll .navigation{z-index: 9;}
 
 .recipes-wrapper{position: relative;}
 
-.recipes-wrapper:before{
+/*.recipes-wrapper:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -192,7 +182,7 @@ body.noscroll .navigation{z-index: 9;}
 	height: 236px;
 	background: url('../images/assets/shape-3.png') no-repeat center;
 	z-index: 99;
-}
+}*/
 
 .inner-recipes-box{
 	max-width: 800px;
@@ -327,14 +317,14 @@ ul.recipe-description-list-items li::before {
 
 .ms-skin-default .ms-nav-prev {
 	background-image: url('../images/assets/back-slider.png');
-	background-position: unset;
+	background-position: center;
 }
 
 .ms-skin-default .ms-nav-next {
     right: 30px;
     left: auto;
 	background-image: url('../images/assets/next-slider.png');
-	background-position: unset;
+	background-position: center;
 }
 
 .contact-us-wrapper > .has-7-5-column > .section,

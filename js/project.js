@@ -20,6 +20,46 @@ $('.ms-layer a.bttn').click(function(event) {
     }, 1000, "easeInOutQuint");
 }); 
 
+// Hide Header on on scroll down
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.navigation').outerHeight();
+
+$(window).scroll(function(event){
+  didScroll = true;
+});
+
+setInterval(function() {
+  if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  
+  // Make sure they scroll more than delta
+  if(Math.abs(lastScrollTop - st) <= delta)
+      return;
+  
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight){
+    // Scroll Down
+    $('.navigation').removeClass('nav-down').addClass('nav-up');
+  } else {
+    // Scroll Up
+    if(st + $(window).height() < $(document).height()) {
+      $('.navigation').removeClass('nav-up').addClass('nav-down');
+    }
+  }
+  
+  lastScrollTop = st;
+}
+
 // Navigation Section Change
 
 var aChildren = $(".navigation li").children();
@@ -121,98 +161,52 @@ $(window).scroll(function() {
 	}
 });
 
-});
-
 // Contact us Form Validate
 
 $('.number-field').numeric();
 
-$('.contact-form').validate({
+$('.contact_form').validate({
 rules: {
-		full_name: {
-		required: true,
-		minlength: 3
-	},
-	subject: {
-		required: true,
-		minlength: 3
-	},
-	email: {
-		required: true,
-		minlength: 5,
-		email:true
-	},
-	phone: {
-		required: true,
-		minlength: 8
-	},
+  full_name: {
+    required: true,
+    minlength: 3
+  },
+  subject: {
+    required: true,
+    minlength: 3
+  },
+  email: {
+    required: true,
+    minlength: 5,
+    email:true
+  },
+  phone: {
+    required: true,
+    minlength: 8
+  },
+  message: {
+    required: true,
+    minlength: 10
+  }
 },
 errorPlacement: function(error, element) {
-	return false;
-	alert('error');
+  return false;
 },
 submitHandler: function (form) {
-	{
-    if($('.contact-form').val() == '') {
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(form).serialize(),
-        success: function () {
-            $('.contact_form :input').prop('disabled', true);
-            $('.thank-you').addClass('active');
-            setTimeout(function(){
-              $('.thank-you').removeClass('active');
-            },5000);
-        }
-      });
-      return false; // required to block normal submit since you used ajax
-    } else {
-      $('.contact_form input[type="submit"]').prop('disabled', true);
-      return false;
-    }
+  {
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $(form).serialize(),
+      success: function () {
+        $('.contact_form input').prop('disabled', true);
+        $('.thank-you').addClass('active');
+      }
+    });
+    return false; // required to block normal submit since you used ajax
   }     
 }
 
 });
 
-
-// Hide Header on on scroll down
-
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('.navigation').outerHeight();
-
-  $(window).scroll(function(event){
-      didScroll = true;
-  });
-
-  setInterval(function() {
-      if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-      }
-  }, 250);
-
-  function hasScrolled() {
-      var st = $(this).scrollTop();
-      
-      // Make sure they scroll more than delta
-      if(Math.abs(lastScrollTop - st) <= delta)
-          return;
-      
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.navigation').removeClass('nav-down').addClass('nav-up');
-      } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-          $('.navigation').removeClass('nav-up').addClass('nav-down');
-        }
-      }
-      
-      lastScrollTop = st;
-    }
+});
