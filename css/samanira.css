@@ -631,11 +631,7 @@ input[type="submit"]:active{
 .nav-toggle span:nth-child(1){width: 33.33333333%;}
 .nav-toggle span:nth-child(2){width: 66.66666666%;}
 
-.nav-toggle.active span{
-	margin-bottom: 5px;
-	background-color: #81a862;
-}
-
+.nav-toggle.active span{background-color: #81a862;}
 .nav-toggle.active span:last-child{width: 33.33333333%;}
 .nav-toggle.active span:nth-child(1){width: 100%;}
 

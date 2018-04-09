@@ -6,10 +6,11 @@ if(isset($_POST['full_name'])) {
 	$subject = $_POST['subject'];
 	
 	// message
-	$message = '<p><strong>Hi <span style="color:#667A79;">BisanCo</span> this Message is from your website contact us section</strong><br /><br />
+	$message = '<p><strong>Hi <span style="color:#667A79;">BisanCo</span> this message is from your website contact us section</strong><br /><br />
 				<b>Full Name</b>: ' . $_POST['full_name'] . '<br /><br />
 				<b>Email Address</b>: ' . $_POST['email'] . '<br /><br />
 				<b>Phone Number</b>: ' . $_POST['phone'] . '<br /><br />
+				<b>Subject</b>: ' . $_POST['subject'] . '<br /><br />
 				<b>Message</b>: ' . $_POST['message'] . '</p> <br />';
 	
 	// To send HTML mail, the Content-type header must be set
