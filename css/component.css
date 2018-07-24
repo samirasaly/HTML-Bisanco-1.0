@@ -172,6 +172,7 @@
 
 .action--close {
 	position: fixed;
+	display:none;
 	z-index: 9999999999;
 	top: 10px;
 	right: 15px;
@@ -186,6 +187,7 @@
 }
 
 .slide--open ~ .action--close {
+	display:block;
 	opacity: 1;
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
